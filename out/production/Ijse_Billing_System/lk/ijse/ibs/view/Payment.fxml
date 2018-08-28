@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1115.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ibs.view.controller.Payment">
+   <children>
+      <Label alignment="CENTER" prefHeight="66.0" prefWidth="1115.0" style="-fx-background-color: #29ACC6;" text="Manage Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutY="66.0" opacity="0.4" prefHeight="702.0" prefWidth="323.0" style="-fx-background-color: #5BCE44;" />
+      <JFXTextField fx:id="txtNic" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="105.0" onAction="#txtNic_OnAction" promptText="Student Nic" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtName" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="173.0" onAction="#txtName_OnAction" promptText="Student Name" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCourseName" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="244.0" promptText="Course Name" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtBatchName" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="312.0" promptText="Batch Name" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtCourseFee" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="384.0" promptText="Course Fee" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtPaid" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="452.0" promptText="Paid" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtBalance" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="523.0" promptText="Balance" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtDueDate" alignment="CENTER" labelFloat="true" layoutX="51.0" layoutY="591.0" promptText="Due date" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="WHITE" />
+      <Label layoutX="342.0" layoutY="87.0" prefHeight="29.0" prefWidth="143.0" style="-fx-font-weight: Bold; -fx-font-size: 15;" text="Payment Type :-" />
+      <JFXCheckBox fx:id="chekFull" layoutX="508.0" layoutY="94.0" style="-fx-font-weight: Bold; -fx-font-size: 15;" text="Full Payment" />
+      <JFXCheckBox fx:id="checkPart" layoutX="506.0" layoutY="131.0" style="-fx-font-weight: Bold; -fx-font-size: 15;" text="Part Payment" />
+      <JFXDatePicker fx:id="dateCurant" layoutX="830.0" layoutY="97.0" prefHeight="29.0" prefWidth="258.0" style="-fx-font-weight: Bold; -fx-font-size: 15;" />
+      <JFXTextField fx:id="txtPaymentFee" alignment="CENTER" labelFloat="true" layoutX="359.0" layoutY="189.0" prefHeight="29.0" prefWidth="295.0" promptText="Payment Fee" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtGovTax" alignment="CENTER" labelFloat="true" layoutX="778.0" layoutY="189.0" prefHeight="29.0" prefWidth="295.0" promptText="Govermant Tax" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtDiscount" alignment="CENTER" labelFloat="true" layoutX="365.0" layoutY="283.0" prefHeight="29.0" prefWidth="295.0" promptText="Discount" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtLateTax" alignment="CENTER" labelFloat="true" layoutX="784.0" layoutY="283.0" prefHeight="29.0" prefWidth="295.0" promptText="Late Tax" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtDiscountBalance" alignment="CENTER" labelFloat="true" layoutX="359.0" layoutY="413.0" prefHeight="29.0" prefWidth="295.0" promptText="Discount Balance" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="BLACK" />
+      <JFXDatePicker fx:id="dateDuedate" layoutX="797.0" layoutY="417.0" prefHeight="29.0" prefWidth="258.0" promptText="Due Date" style="-fx-font-weight: Bold; -fx-font-size: 15;" />
+      <JFXTextField fx:id="txtGivenAmount" alignment="CENTER" labelFloat="true" layoutX="359.0" layoutY="530.0" prefHeight="29.0" prefWidth="295.0" promptText="Given Amount" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtTheBalance" alignment="CENTER" labelFloat="true" layoutX="784.0" layoutY="530.0" prefHeight="29.0" prefWidth="295.0" promptText="The Balance" style="-fx-font-weight: Bold; -fx-font-size: 15; -fx-font-fill: blue;" unFocusColor="BLACK" />
+      <JFXButton fx:id="btnPayment" buttonType="RAISED" layoutX="869.0" layoutY="635.0" onAction="#btnPayment_OnAction" prefHeight="39.0" prefWidth="180.0" style="-fx-background-color: #27DDC5; -fx-background-radius: 6 6 6 6;" text="Payment">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

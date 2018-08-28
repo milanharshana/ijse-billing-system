@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="767.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ibs.view.controller.RegStudent">
+   <children>
+      <Label alignment="CENTER" prefHeight="44.0" prefWidth="1115.0" style="-fx-background-color: blue; -fx-font-size: 20; -fx-font-weight: Bold;" text="Student Register Form" textFill="WHITE" />
+      <Label layoutY="44.0" prefHeight="80.0" prefWidth="1115.0" style="-fx-background-color: black;" />
+      <Label fx:id="btnp_Detail" alignment="BOTTOM_CENTER" layoutX="44.0" layoutY="52.0" onMouseClicked="#btnp_Detail_OnMouseClicked" prefHeight="66.0" prefWidth="107.0" text="Personal Detail" textFill="WHITE" />
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="73.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/regStudent.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="btnE_Detail" alignment="BOTTOM_CENTER" layoutX="512.0" layoutY="56.0" onMouseClicked="#btnE_Detail_OnMouseClicked" prefHeight="66.0" prefWidth="121.0" text="Guardiant Detail" textFill="WHITE" />
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="554.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/regStudent.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="BtnD_Detail" alignment="BOTTOM_CENTER" layoutX="966.0" layoutY="56.0" onMouseClicked="#BtnD_Detail_OnMouseClicked" prefHeight="66.0" prefWidth="121.0" text="Office Detail" textFill="WHITE" />
+      <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="1008.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/regStudent.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="s_mainPane" layoutY="124.0" prefHeight="643.0" prefWidth="1115.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ibs.view.controller.Dashboard">
+   <children>
+      <Label layoutX="-1.0" prefHeight="768.0" prefWidth="252.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/footer_logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="137.0" layoutX="115.0" layoutY="90.0" startX="-115.0" stroke="#1300f5" />
+      <JFXButton fx:id="btnHome" alignment="CENTER" buttonType="RAISED" ellipsisString="" layoutX="46.0" layoutY="154.0" onAction="#btnHome_OnAction" opacity="0.96" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-radius: 100; -fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: white; -fx-background-color: blue;" text="Home" textFill="WHITE" textOverrun="LEADING_ELLIPSIS" />
+      <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="14.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/home.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnRStudent" alignment="CENTER" buttonType="RAISED" ellipsisString="" layoutX="45.0" layoutY="229.0" onAction="#btnRStudent_OnAction" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-radius: 100; -fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: white; -fx-background-color: blue;" text="Register Student" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="14.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/regStudent.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnPayment" alignment="CENTER" buttonType="RAISED" ellipsisString="" layoutX="45.0" layoutY="298.0" onAction="#btnPayment_OnAction" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-radius: 100; -fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: white; -fx-background-color: blue;" text="Manage Payment" textFill="#a9baaa" textOverrun="LEADING_ELLIPSIS" />
+      <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="14.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/payment.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnCourse" alignment="CENTER" buttonType="RAISED" ellipsisString="" layoutX="45.0" layoutY="371.0" onAction="#btnCourse_OnAction" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-radius: 100; -fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: white; -fx-background-color: blue;" text="Manage Course" textFill="#a9baaa" textOverrun="LEADING_ELLIPSIS" />
+      <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="14.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/course.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="BtnBatch" alignment="CENTER" buttonType="RAISED" ellipsisString="" layoutX="45.0" layoutY="448.0" onAction="#BtnBatch_OnAction" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-radius: 100; -fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: white; -fx-background-color: blue;" text="Manage Batch" textFill="#a9baaa" textOverrun="LEADING_ELLIPSIS" />
+      <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="14.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/batch.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="mainPane" layoutX="251.0" prefHeight="768.0" prefWidth="1115.0" />
+      <JFXButton fx:id="btnLogOut" alignment="CENTER" buttonType="RAISED" ellipsisString="" layoutX="41.0" layoutY="520.0" onAction="#btnLogOut_OnAction" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-radius: 100; -fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: white; -fx-background-color: blue;" text="Log Out" textFill="#a9baaa" textOverrun="LEADING_ELLIPSIS" />
+      <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="10.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/logout.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnExit" alignment="CENTER" buttonType="RAISED" ellipsisString="" layoutX="41.0" layoutY="598.0" onAction="#btnExit_OnAction" prefHeight="37.0" prefWidth="200.0" ripplerFill="RED" style="-fx-background-radius: 100; -fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: white; -fx-background-color: blue;" text="Exit" textFill="#a9baaa" textOverrun="LEADING_ELLIPSIS" />
+      <ImageView fitHeight="37.0" fitWidth="31.0" layoutX="10.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/exit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

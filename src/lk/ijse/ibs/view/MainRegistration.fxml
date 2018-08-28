@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="643.0" prefWidth="1115.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ibs.view.controller.MainRegistration">
+   <children>
+      <Label layoutX="14.0" layoutY="10.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Name Initials" />
+      <TextField fx:id="txtNameInitials" layoutX="129.0" layoutY="15.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="49.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Full Name" />
+      <TextField fx:id="txtFullName" layoutX="129.0" layoutY="54.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="87.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Nic" />
+      <TextField fx:id="txtNic" layoutX="129.0" layoutY="92.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="136.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Address" />
+      <TextField fx:id="txtAddress" layoutX="129.0" layoutY="141.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="178.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Home No" />
+      <TextField fx:id="txtHomeNo" layoutX="129.0" layoutY="183.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="226.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Contact No" />
+      <TextField fx:id="txtContactNo" layoutX="129.0" layoutY="231.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="268.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="E-Mail" />
+      <TextField fx:id="txtEmail" layoutX="129.0" layoutY="273.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="316.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="DOB" />
+      <TextField fx:id="txtDob" layoutX="129.0" layoutY="321.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="351.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Gender" />
+      <Label layoutX="14.0" layoutY="389.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="School" />
+      <TextField fx:id="txtSchool" layoutX="129.0" layoutY="394.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="431.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="University" />
+      <TextField fx:id="txtUni" layoutX="129.0" layoutY="436.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="480.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Faculty" />
+      <TextField fx:id="txtfac" layoutX="129.0" layoutY="485.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="14.0" layoutY="520.0" prefHeight="36.0" prefWidth="122.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Higher Edu Qul." />
+      <JFXCheckBox fx:id="checkMale" layoutX="129.0" layoutY="360.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Male" />
+      <JFXCheckBox fx:id="checkFeMale" layoutX="224.0" layoutY="360.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="FeMale" />
+      <JFXCheckBox fx:id="checkOl" layoutX="139.0" layoutY="529.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="O/L" />
+      <JFXCheckBox fx:id="checkMaster" layoutX="234.0" layoutY="529.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Master" />
+      <JFXCheckBox fx:id="ckeckAl" layoutX="139.0" layoutY="556.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="A/L" />
+      <JFXCheckBox fx:id="checkDegree" layoutX="234.0" layoutY="556.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Degree" />
+      <JFXCheckBox fx:id="checkDiploma" layoutX="323.0" layoutY="531.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Diploma" />
+      <JFXCheckBox fx:id="checkOther" layoutX="323.0" layoutY="557.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Other" />
+      <Label layoutX="435.0" layoutY="2.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-size: 13; -fx-font-weight: Bold;" text="Guardiant ID" />
+      <TextField fx:id="txtGuardiantId" layoutX="564.0" layoutY="7.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="435.0" layoutY="42.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Guardian Name" />
+      <TextField fx:id="txtGuardiantName" layoutX="564.0" layoutY="47.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="435.0" layoutY="81.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Contact 1" />
+      <TextField fx:id="txtContact1" layoutX="564.0" layoutY="86.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="435.0" layoutY="119.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Contact 2" />
+      <TextField fx:id="txtContact2" layoutX="564.0" layoutY="124.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="435.0" layoutY="168.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Designation" />
+      <TextField fx:id="txtDesignation" layoutX="564.0" layoutY="173.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="435.0" layoutY="210.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Working Place" />
+      <TextField fx:id="txtWorkingPlace" layoutX="564.0" layoutY="215.0" prefHeight="26.0" prefWidth="280.0" />
+      <Label layoutX="435.0" layoutY="258.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Address" />
+      <TextField fx:id="txtAddress" layoutX="564.0" layoutY="263.0" prefHeight="26.0" prefWidth="280.0" />
+      <Line endX="557.0" layoutX="558.0" layoutY="322.0" startX="-124.0" />
+      <Label layoutX="435.0" layoutY="354.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Reg ID" />
+      <TextField fx:id="txtRegId" layoutX="589.0" layoutY="359.0" prefHeight="26.0" prefWidth="298.0" />
+      <Label layoutX="435.0" layoutY="394.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Student ID" />
+      <TextField fx:id="txtStudentID" layoutX="589.0" layoutY="399.0" prefHeight="26.0" prefWidth="298.0" />
+      <Label layoutX="435.0" layoutY="433.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Date" />
+      <Label layoutX="435.0" layoutY="471.0" prefHeight="36.0" prefWidth="133.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Registration Fee" />
+      <TextField fx:id="txtRegFee" layoutX="589.0" layoutY="476.0" prefHeight="26.0" prefWidth="298.0" />
+      <Label layoutX="435.0" layoutY="520.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Course" />
+      <Label layoutX="435.0" layoutY="569.0" prefHeight="36.0" prefWidth="115.0" style="-fx-font-weight: Bold; -fx-font-size: 13;" text="Batch" />
+      <Line endX="557.0" layoutX="558.0" layoutY="674.0" startX="-124.0" />
+      <JFXDatePicker fx:id="dateCurdate" layoutX="589.0" layoutY="436.0" prefHeight="29.0" prefWidth="306.0" />
+      <JFXComboBox fx:id="cmbCourse" layoutX="589.0" layoutY="525.0" prefHeight="26.0" prefWidth="298.0" />
+      <JFXComboBox fx:id="cmbBatch" layoutX="593.0" layoutY="574.0" prefHeight="26.0" prefWidth="298.0" />
+      <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="908.0" layoutY="505.0" onAction="#btnRegister_OnAction" prefHeight="46.0" prefWidth="194.0" ripplerFill="RED" style="-fx-background-color: #2762C6;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

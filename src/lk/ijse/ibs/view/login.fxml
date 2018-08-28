@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: D11460;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ibs.view.controller.Login">
+   <children>
+      <ImageView fitHeight="694.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../assest/untitled3_copy.jpg" />
+         </image>
+      </ImageView>
+      <Label opacity="0.53" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: black;" textFill="#c63b3b" />
+      <Label layoutX="462.0" layoutY="163.0" prefHeight="355.0" prefWidth="252.0" />
+      <Label layoutX="333.0" layoutY="101.0" opacity="0.09" prefHeight="516.0" prefWidth="700.0" style="-fx-background-color: blue;" textFill="WHITE" />
+      <JFXTextField fx:id="txtUserName" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="488.0" layoutY="279.0" prefHeight="46.0" prefWidth="345.0" promptText="User Name" style="-fx-background-radius: 6 6 6 6; -fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: blue;" unFocusColor="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" alignment="CENTER" focusColor="WHITE" labelFloat="true" layoutX="488.0" layoutY="424.0" prefHeight="48.0" prefWidth="345.0" promptText="Password" style="-fx-font-size: 20; -fx-font-weight: Bold; -fx-text-fill: blue;" unFocusColor="#11138a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="62.0" fitWidth="297.0" layoutX="512.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/footer_logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLogin" alignment="CENTER" buttonType="RAISED" layoutX="554.0" layoutY="528.0" onAction="#btnLogin_OnAction" opacity="0.51" prefHeight="40.0" prefWidth="214.0" ripplerFill="#fc0505" style="-fx-background-radius: 10 10 10 10; -fx-background-color: red; -fx-font-weight: Bold; -fx-font-size: 20;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="40.0" layoutX="33.0" layoutY="687.0" rotate="-128.4" stroke="BLACK" strokeType="INSIDE" width="42.0" />
+      <ImageView fx:id="btnClose" fitHeight="40.0" fitWidth="48.0" layoutX="1326.0" layoutY="6.0" onMouseClicked="#btnClose_MouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
